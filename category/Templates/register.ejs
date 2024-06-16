@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #f4f4f4;
+            color: #555555;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #dddddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p> Hello <%=name%> </p>
+            <h1>Welcome to Our Newsletter</h1>
+        </div>
+        <div class="content">
+            <p>Thank you for subscribing to our newsletter. We are excited to share the latest updates with you.</p>
+            <img src="https://via.placeholder.com/600x300" alt="Sample Image">
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <p><a href="#">Unsubscribe</a></p>
+        </div>
+    </div>
+</body>
+</html>

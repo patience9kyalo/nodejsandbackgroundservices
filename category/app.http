@@ -1,0 +1,74 @@
+
+GET http://localhost:4000/categories
+
+####
+
+POST http://localhost:4000/categories
+Content-Type: application/json
+
+{
+    "catname": "Women",
+    "catdescription": "For all women"
+}
+
+####
+
+POST http://localhost:4000/products
+Content-Type: application/json
+
+{
+    "prodname": "Adidas",
+    "proddescription": "For all women",
+    "prodprice":"2000",
+    "catid":"03fc20e8-d37e-4268-af82-d347d1e1e05e"
+}
+
+
+####
+
+GET http://localhost:4000/products
+
+####
+
+PUT http://localhost:4000/products/38dcfef3-2ec5-45c3-ab2e-b489d7f1bcd6
+Content-Type: application/json
+
+{
+    "prodname": "Adidas",
+    "proddescription": "For all women",
+    "prodprice":"2000",
+    "catid":"03fc20e8-d37e-4268-af82-d347d1e1e05e"
+}
+
+####
+
+DELETE http://localhost:4000/products/38dcfef3-2ec5-45c3-ab2e-b489d7f1bcd6
+
+####
+
+POST http://localhost:4000/users/register
+Content-Type: application/json
+
+{
+    "Name":"Patience",
+    "Email":"patiencekyalo577@gmail.com",
+    "Password":"Secret@2024"
+}
+
+####
+
+GET http://localhost:4000/users
+
+######
+
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "Email":"patiencekyalo577@gmail.com",
+    "Password":"Secret@2024"
+}
+
+#####
+GET http://localhost:4000/products
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiI1MDRiZDU4OS04MmRjLTQ0ZTYtOGExNy0yZWQ0MTZkZDJkMTAiLCJOYW1lIjoiUGF0aWVuY2UiLCJpYXQiOjE3MTgyNTgyODksImV4cCI6MTcxODI2NTQ4OX0.yi_bWhg1D9o6kGkdIsFq45XanBDz0xo5gnCa7USa5AE
